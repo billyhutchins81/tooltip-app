@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align:center;">
+
+<h2>Tooltips</h2>
+<p>Click Button to show tooltip. Click ESC to hide tooltip</p>
+
+<button  class="tooltip" (click)="showToolTipForButton(1)">BUTTON 1
+  <span class="tooltiptext" style="visibility: visible; opacity: 1" *ngIf="clickedButton == 1">BUTTON 1 Tooltip text</span>
+</button>
+<button  class="tooltip" (click)="showToolTipForButton(2)">BUTTON 2
+  <span class="tooltiptext" style="visibility: visible; opacity: 1" *ngIf="clickedButton == 2">BUTTON 2 Tooltip text</span>
+</button>
+
+
+</body>
+</html>
